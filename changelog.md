@@ -1,6 +1,6 @@
 CẢNH BÁO: Vui lòng không bật sulist vì có thể gây bootloop thiết bị!!
 
-CHANGELOG:
+Update: 24/12/2023
 
 • Cập nhật gói strings mới nhất ngày 24/12/2023
 
