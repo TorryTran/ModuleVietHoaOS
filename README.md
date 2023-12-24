@@ -1,7 +1,3 @@
-🇻🇳 Mang tiếng việt vào rom china
-
-🇻🇳 Update hàng tuần 
-
 🇻🇳 Support: @VietHoaHyper
 
 🇻🇳 Tác giả: @TorryTran
