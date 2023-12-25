@@ -1,4 +1,7 @@
 #!/bin/bash
+unban() {
+touch /data/adb/modules_update/VietHoaHyperOS/.user
+}
 
 ban() {
 echo "- Bạn đã bị cấm cài đặt module"
