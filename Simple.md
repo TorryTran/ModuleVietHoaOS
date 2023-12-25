@@ -1,9 +1,3 @@
-CẢNH BÁO: Vui lòng không bật Magisk SuList vì có thể gây bootloop thiết bị!!
+ĐÂY LÀ TÍNH NĂNG THỬ NGHIỆM!
 
-Update: 24/12/2023
-
-• Cập nhật gói strings mới nhất ngày 24/12/2023
-
-• Sửa lỗi
-
-✨ Cảm ơn @furinaxpgn đã hỗ trợ tính năng tự động cập nhật cho module
+Thêm tính năng fix lỗi trực tuyến, khi được báo fix lỗi xong thì bạn có thể flash lại module cũ, lỗi sẽ không còn
