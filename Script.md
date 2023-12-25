@@ -7,6 +7,7 @@ script_code="#!/system/bin/sh
 
 # Chưa có bản vá lỗi nào ở đây
 # Module Việt hoá OS by TorryTran
+
 "
 ####################################
 echo "$script_code" > "$update_script"
