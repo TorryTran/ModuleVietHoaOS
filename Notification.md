@@ -1,3 +1,4 @@
+rm -rf nofi
 if [ -f nofi ]; then
 sleep 1
 else
