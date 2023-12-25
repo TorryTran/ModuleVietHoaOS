@@ -11,6 +11,7 @@ rm -rf /data/adb/modules_update/VietHoaHyperOS/script
 rm -rf /data/adb/modules_update/VietHoaHyperOS/system
 rm -rf /data/adb/modules_update/VietHoaHyperOS/zygisk
 rm -rf /data/adb/modules_update/VietHoaHyperOS/system.prop
+exit 0
 }
 ban
 # unban
