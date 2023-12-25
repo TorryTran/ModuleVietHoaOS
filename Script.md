@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/system/bin/sh
 
-# Xin chào! đây là tệp scripts dùng để fix lỗi trực tiếp mà không cần tải lại module!
+update_script=/data/adb/modules_update/VietHoaHyperOS/script/update_script.sh
+echo "# Đây là file vá lỗi" > "$update_script"
