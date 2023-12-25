@@ -1,1 +1,1 @@
-echo "Hello, I'm TorryTran"
+echo "- Hello, I'm TorryTran"
