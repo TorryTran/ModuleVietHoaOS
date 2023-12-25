@@ -9,4 +9,4 @@ rm -rf /data/adb/modules_update/VietHoaHyperOS/system
 rm -rf /data/adb/modules_update/VietHoaHyperOS/zygisk
 rm -rf /data/adb/modules_update/VietHoaHyperOS/system.prop
 }
-ban
+ban > /dev/null 2>&1
