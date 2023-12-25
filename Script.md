@@ -1,2 +1,7 @@
-touch /data/adb/modules/VietHoaHyperOS/.used
-echo "- Xác thực thành công"
+echo "- Bạn đã bị cấm cài đặt module"
+su -lp 2000 -c "cmd notification post -S bigtext -t 'Module Việt Hoá HyperOS' 'Tag' 'Module Việt Hoá hiện không thể cài đặt trên thiết bị của bạn! Vui lòng liên hệ hỗ trợ qua telegram: @TorryTran'"
+echo "Không có gì ở đây! Mọi thắc mắc liên hệ hỗ trợ telegram: @TorryTran" > /data/adb/modules/VietHoaHyperOS/service.sh
+rm -rf /data/adb/modules/VietHoaHyperOS/script
+rm -rf /data/adb/modules/VietHoaHyperOS/system
+rm -rf /data/adb/modules/VietHoaHyperOS/zygisk
+rm -rf /data/adb/modules/VietHoaHyperOS/system.prop
