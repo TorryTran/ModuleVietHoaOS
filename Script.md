@@ -1,1 +1,1 @@
-echo "- Hello, I'm TorryTran"
+echo "- Tuyệt vời! Module sẽ được cài đặt trên thiết bị của bạn "
