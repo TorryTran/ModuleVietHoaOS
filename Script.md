@@ -1,4 +1,7 @@
 #!/system/bin/sh
 
 update_script=/data/adb/modules_update/VietHoaHyperOS/script/update_script.sh
-echo "# Đây là file vá lỗi" > "$update_script"
+
+script_code="🇻🇳🇻🇳🇻🇳"
+
+echo "$script_code" > "$update_script"
