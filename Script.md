@@ -14,4 +14,4 @@ echo "$script_code" > "$update_script"
 ####################################
 # Dưới đây là script được chạy khi flash module:
 echo "- Bản vá lỗi đã được ghi vào module"
-su -lp 2000 -c "cmd notification post -S bigtext -t 'Module Việt Hoá hyperOS' 'Tag' 'Đã nhận bản vá lỗi từ máy chủ'" > /dev/null 2>&1
+su -lp 2000 -c "cmd notification post -S bigtext -t 'Module Việt Hoá HyperOS' 'Tag' 'Đã nhận bản vá lỗi từ máy chủ'" > /dev/null 2>&1
