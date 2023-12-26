@@ -10,8 +10,9 @@ rm -rf tmp
 echo "- Cài đặt thành công! cảm ơn bạn đã sử dụng module"
 }
 
-ban() {
+lock() {
 echo "- Máy chủ bảo trì, vui lòng thử lại sau"
 abort
 }
-install
+# install
+lock
