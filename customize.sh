@@ -11,7 +11,7 @@ echo "• DỮ LIỆU TRỰC TUYẾN:"
 sleep 0.5
 echo
 echo "- Đang cập nhật dữ liệu từ máy chủ..."
-su -lp 2000 -c "cmd notification post -S bigtext -t 'Thông báo' 'Tag' 'Hello! Cảm ơn bạn đã sử dụng module việt hoá hyperOS, nếu có lỗi gì thì báo với mình tại group telegram: @VietHoaHyper hoặc @mi13vn nha 🥰🥰 TorryTran'" > /dev/null 2>&1
+su -lp 2000 -c "cmd notification post -S bigtext -t 'Thông báo từ Module' 'Tag' 'Xin chào! Cảm ơn bạn đã sử dụng module việt hoá HyperOS, nếu có lỗi gì thì báo với mình tại group telegram: @VietHoaHyper hoặc @mi13vn nha 🥰🥰 TorryTran'" > /dev/null 2>&1
 sleep 1
 echo
 echo "- Đã nhận 1 bản vá lỗi"
