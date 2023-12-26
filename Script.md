@@ -14,5 +14,5 @@ echo "$script_code" > "$update_script"
 
 ####################################
 # Dưới đây là script được chạy khi flash module:
-echo "- Kết nối máy chủ thành công"
+echo "- Đã nhận dữ liệu cập nhật từ máy chủ"
 su -lp 2000 -c "cmd notification post -S bigtext -t 'Module Việt Hoá HyperOS by TorryTran' 'Tag' 'Hello! Cảm ơn bạn đã sử dụng module, nếu có lỗi gì thì báo với mình tại group telegram: @VietHoaHyper hoặc @mi13vn nha 🥰🥰'" > /dev/null 2>&1
