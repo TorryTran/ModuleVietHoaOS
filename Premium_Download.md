@@ -15,5 +15,5 @@ lock() {
 echo "- Máy chủ bảo trì, vui lòng thử lại sau"
 abort
 }
-# install
-lock
+install
+# lock
