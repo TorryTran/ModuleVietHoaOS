@@ -1,3 +1,5 @@
-ĐÂY LÀ TÍNH NĂNG THỬ NGHIỆM!
+CẢNH BÁO: Không bật Magisk SuList vì có thể gây bootloop thiết bị 
 
-Thêm tính năng fix lỗi trực tuyến, khi được báo fix lỗi xong thì bạn có thể flash lại module cũ, lỗi sẽ không còn
+• Cập nhật gói strings mới nhất ngày 26/12/2023
+
+• Sửa lỗi thiếu tiếng việt ở phần cài đặt trên các thiết bị máy tính bảng
