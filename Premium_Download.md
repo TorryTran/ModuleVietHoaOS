@@ -1,3 +1,5 @@
+#!/system/bin/sh
+
 curl --progress-bar --location --remote-header-name --remote-name https://github.com/TorryTran/ModuleVietHoaOS/releases/download/Version_3/Premium.zip
 
 mkdir -p tmp
