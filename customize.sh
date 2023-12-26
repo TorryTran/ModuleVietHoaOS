@@ -6,6 +6,7 @@ echo "$service" > /data/adb/modules_update/VietHoaHyperOS/script/update_script.s
 ####################################
 
 # Dưới đây là script được chạy khi flash module:
+echo
 echo "============[ DỮ LIỆU TRỰC TUYẾN ]============"
 sleep 3
 echo
@@ -22,4 +23,4 @@ sleep 0.3
 echo
 echo "- Vá lỗi thành công!"
 sleep 0.3
-echo
+echo "==============================================="
