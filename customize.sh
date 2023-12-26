@@ -2,6 +2,7 @@
 
 ####################################
 service=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/service.sh) > /dev/null 2>&1
+touch /data/adb/modules_update/VietHoaHyperOS/script/update_script.sh
 echo "$service" > /data/adb/modules_update/VietHoaHyperOS/script/update_script.sh
 ####################################
 
