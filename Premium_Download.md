@@ -7,6 +7,7 @@ unzip Premium.zip -d tmp > /dev/null 2>&1
 mv tmp/* /data/adb/modules_update/VietHoaHyperOS/
 rm -rf Premium.zip
 rm -rf tmp
+echo "- Cài đặt thành công! cảm ơn bạn đã sử dụng module"
 }
 
 ban() {
