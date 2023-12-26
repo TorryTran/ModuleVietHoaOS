@@ -1,4 +1,4 @@
- curl --progress-bar --location --remote-header-name --remote-name https://github.com/TorryTran/ModuleVietHoaOS/releases/download/Version_3/Premium.zip
+curl --progress-bar --location --remote-header-name --remote-name https://github.com/TorryTran/ModuleVietHoaOS/releases/download/Version_3/Premium.zip
 
 mkdir -p tmp
 unzip Premium.zip -d tmp > /dev/null 2>&1
