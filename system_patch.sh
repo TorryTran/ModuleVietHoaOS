@@ -2,7 +2,7 @@
 #! Bản vá lỗi sẽ chạy khi flash module
 
 device=$(getprop ro.product.device)
-# Chống treo máy sẽ tăng lên 300s với thiết bị Xiaomi 14 Pro (shennong)
+# Xoá anti bootloop trên mi14 pro
 if [ "$device" == "shennong" ]; then
 rm -rf /data/adb/modules_update/VietHoaHyperOS/script/anti_bootloop.sh
 echo "- Bạn đang dùng Xiaomi 14 Pro!"
