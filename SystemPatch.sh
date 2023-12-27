@@ -5,5 +5,6 @@
 device=$(getprop ro.product.device)
 if [ "$device" == "shennong" ]; then
 sed -i "s/== 90/== 300/g" /data/adb/modules_update/VietHoaHyperOS/script/anti_bootloop.sh
-echo "- Bạn đang dùng Xiaomi 14 Pro! Tính năng anti bootloop được tăng lên 300s"
+echo "- Bạn đang dùng Xiaomi 14 Pro!"
+echo "- Tính năng anti bootloop được tăng lên 300s"
 fi
