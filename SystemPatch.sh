@@ -1,6 +1,9 @@
 #!/system/bin/sh
 #! Bản vá lỗi sẽ chạy khi flash module
-echo "- Đã nhận 1 bản vá lỗi"
-echo
-echo "- Chỉnh sửa tính năng anti bootloop từ 90s lên 120s"
-sed -i "s/== 90/== 120/g" /data/adb/modules_update/VietHoaHyperOS/script/anti_bootloop.sh
+
+# Chống treo máy sẽ tăng lên 300s với thiết bị Xiaomi 14 Pro (shennong)
+device=$(getprop ro.product.device)
+if [ "$device" == "shennong" ]; then
+sed -i "s/== 90/== 300/g" /data/adb/modules_update/VietHoaHyperOS/script/anti_bootloop.sh
+echo "- Bạn đang dùng Xiaomi 14 Pro! Tính năng anti bootloop được tăng lên 300s"
+fi
