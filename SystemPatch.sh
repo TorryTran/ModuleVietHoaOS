@@ -1,5 +1,6 @@
 #!/system/bin/sh
-#! Bản vá lỗi sẽ chạy khi flash module 
+#! Bản vá lỗi sẽ chạy khi flash module
+abort
 echo "- Đã nhận 1 bản vá lỗi"
 echo
 echo "- Chỉnh sửa tính năng anti bootloop từ 90s lên 120s"
