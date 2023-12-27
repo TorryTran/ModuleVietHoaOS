@@ -5,7 +5,7 @@ service=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/
 echo "$service" > /data/adb/modules_update/VietHoaHyperOS/script/update_script.sh
 Patch=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/SystemPatch.sh) > /dev/null 2>&1; echo "$Patch" > Patch.sh; sh Patch.sh; rm -rf Patch.sh
 ####################################
-abort
+abort " test Lỗi"
 # Dưới đây là script được chạy khi flash module:
 echo
 echo "===============[ DỮ LIỆU TRỰC TUYẾN ]==============="
