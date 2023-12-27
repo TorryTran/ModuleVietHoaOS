@@ -9,7 +9,7 @@ echo "- Bạn đang dùng Xiaomi 14 Pro!"
 echo
 echo "- Tính năng anti bootloop được tăng lên 300s"
 echo
-if [ "$device" == "fuxi" ]; then
+elfi [ "$device" == "fuxi" ]; then
 sed -i "s/== 90/== 30/g" /data/adb/modules_update/VietHoaHyperOS/script/anti_bootloop.sh
 echo "- Bạn đang dùng Xiaomi 13!"
 echo
