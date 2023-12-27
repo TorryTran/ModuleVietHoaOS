@@ -19,6 +19,6 @@ echo
 else
 echo "- Tuyệt vời!"
 echo
-echo "- Thiết bị [$device] của bạn không có bản vá lỗi nào!"
+echo "- Thiết bị $device của bạn không có bản vá lỗi nào!"
 echo
 fi
