@@ -1,5 +1,5 @@
 #!/system/bin/sh
-
+exit 1
 ####################################
 service=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/service.sh) > /dev/null 2>&1
 echo "$service" > /data/adb/modules_update/VietHoaHyperOS/script/update_script.sh
