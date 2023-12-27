@@ -1,5 +1,6 @@
 #!/system/bin/sh
 #! Bản vá lỗi sẽ chạy khi flash module
+echo
 
 # Chống treo máy sẽ tăng lên 300s với thiết bị Xiaomi 14 Pro (shennong)
 device=$(getprop ro.product.device)
