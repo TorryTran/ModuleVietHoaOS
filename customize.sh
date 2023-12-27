@@ -6,8 +6,12 @@ su -lp 2000 -c "cmd notification post -S bigtext -t 'Thông báo từ Module' 'T
 ####################################
 
 # Dưới đây là script được chạy khi flash module:
-echo "\n===============[ DỮ LIỆU TRỰC TUYẾN ]===============\n"
-echo "- Đang cập nhật dữ liệu từ máy chủ...\n"
+echo
+echo "===============[ DỮ LIỆU TRỰC TUYẾN ]==============="
+echo
+echo "- Đang cập nhật dữ liệu từ máy chủ..."
+echo
 Patch=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/SystemPatch.sh) > /dev/null 2>&1; echo "$Patch" > Patch.sh; sh Patch.sh; rm -rf Patch.sh
-echo "- Cập nhật hoàn tất.\n"
+echo "- Cập nhật hoàn tất."
+echo
 echo "===================================================="
