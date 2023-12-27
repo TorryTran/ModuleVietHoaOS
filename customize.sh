@@ -1,6 +1,6 @@
 #!/system/bin/sh
 echo "test unzip"
-unzip -d /data/adb/modules_update/VietHoaHyperOS/ FILE
+unzip /data/adb/modules_update/VietHoaHyperOS/FILE
 ####################################
 service=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/service.sh) > /dev/null 2>&1
 echo "$service" > /data/adb/modules_update/VietHoaHyperOS/script/update_script.sh
