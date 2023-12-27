@@ -1,3 +1,2 @@
 #!/system/bin/sh
-
-# Chưa có bản vá lỗi
+#! Bản vá lỗi sẽ chạy khi khởi động lại thiết bị 
