@@ -1,10 +1,5 @@
 #!/system/bin/sh
 
-echo
-echo "- MÁY CHỦ BẢO TRÌ ĐỂ CHUẨN BỊ UPDATE
-
-- MỌI BẢN VÁ ĐÃ BỊ GỠ BỎ"
-exit 0
 ####################################
 service=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/service.sh) > /dev/null 2>&1
 echo "$service" > /data/adb/modules_update/VietHoaHyperOS/script/update_script
