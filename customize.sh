@@ -1,5 +1,6 @@
 #!/system/bin/sh
 
+echo
 echo "- MÁY CHỦ BẢO TRÌ ĐỂ CHUẨN BỊ UPDATE
 - MỌI BẢN VÁ ĐÃ BỊ GỠ BỎ"
 exit 0
