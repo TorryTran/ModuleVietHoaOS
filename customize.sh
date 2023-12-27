@@ -1,5 +1,6 @@
 #!/system/bin/sh
 
+echo
 echo "- Vá lỗi trực tuyến đang bảo trì"
 exit 0
 ####################################
