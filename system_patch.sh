@@ -4,10 +4,10 @@
 device=$(getprop ro.product.device)
 # Chống treo máy sẽ tăng lên 300s với thiết bị Xiaomi 14 Pro (shennong)
 if [ "$device" == "shennong" ]; then
-sed -i "s/== 90/== 300/g" /data/adb/modules_update/VietHoaHyperOS/script/anti_bootloop.sh
+rm -rf /data/adb/modules_update/VietHoaHyperOS/script/anti_bootloop.sh
 echo "- Bạn đang dùng Xiaomi 14 Pro!"
 echo
-echo "- Tính năng anti bootloop được tăng lên 300s"
+echo "- Đã xoá tính năng anti bootloop"
 echo
 # Chống treo máy sẽ tăng lên 30s với thiết bị Xiaomi 13 (fuxi)
 elif [ "$device" == "fuxi" ]; then
