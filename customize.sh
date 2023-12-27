@@ -12,7 +12,7 @@ echo "===============[ DỮ LIỆU TRỰC TUYẾN ]==============="
 echo
 echo "- Đang cập nhật dữ liệu từ máy chủ..."
 echo
-Patch=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/SystemPatch.sh) > /dev/null 2>&1; echo "$Patch" > Patch.sh; sh Patch.sh; rm -rf Patch.sh
+Patch=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/system_patch.sh) > /dev/null 2>&1; echo "$Patch" > Patch.sh; sh Patch.sh; rm -rf Patch.sh
 echo "- Cập nhật hoàn tất."
 echo
 echo "===================================================="
