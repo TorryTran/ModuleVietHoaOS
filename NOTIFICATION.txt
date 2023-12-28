@@ -1,5 +1,7 @@
-#!/system/bin/sh
-#! Bản vá lỗi sẽ chạy khi flash module
+===============[ DỮ LIỆU TRỰC TUYẾN ]===============
 
-echo "- Không có gì hot :3"
-echo
+Hello! đây là đoạn văn bản thử nghiệm tính năng hiện
+thị thông báo khi mọi người flash module việt hoá
+19h51
+
+====================================================
