@@ -1,11 +1,8 @@
 #!/system/bin/sh
 
 # Tiêu đề và nội dung xuất hiện trên thanh thông báo điện thoại khi mới flash module việt hoá.
-TIEU_DE_THONG_BAO="Thông báo từ Module"
-NOI_DUNG_THONG_BAO="Cảm ơn bạn đã sử dụng module!
-Channel: @VietHoaHyperOS
-Group: @VietHoaHyper
-Author: @TorryTran"
+TIEU_DE_THONG_BAO="Thông báo từ module"
+NOI_DUNG_THONG_BAO="Cảm ơn bạn đã sử dụng module"
 
 # Hiện thị thông báo & thêm script vào update_script trong module việt hoá || service.sh
 ####################################
