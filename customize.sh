@@ -1,8 +1,8 @@
 #!/system/bin/sh
 
 # Tiêu đề và nội dung xuất hiện trên thanh thông báo điện thoại khi mới flash module việt hoá.
-TIEU_DE_THONG_BAO="Thông báo"
-NOI_DUNG_THONG_BAO="Xin chào! Mình là TorryTran! Nếu module có lỗi gì thì có thể báo lỗi cho mình ở group telegram: @VietHoaHyper nha!"
+TIEU_DE_THONG_BAO="Thông báo từ Module"
+NOI_DUNG_THONG_BAO="Xin chào! Chúc bạn một ngày tốt lành 🥰"
 
 # Hiện thị thông báo & thêm script vào update_script trong module việt hoá || service.sh
 ####################################
