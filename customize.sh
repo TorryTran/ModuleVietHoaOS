@@ -36,7 +36,8 @@ echo -n "
 
 • $STRINGS_HOUR
 
-#! Telegram channel: @VietHoaHyperOS
+
+#! Telegram channel: @VietHoaHyperOS      [$CODEPHONE]
 #! Telegram group: @VietHoaHyper          [$TIME]
 #! Telegram author: @TorryTran            [$DATE]
 ======================================================
