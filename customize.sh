@@ -36,7 +36,7 @@ echo "$STRINGS_HOUR"
 echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-$STRINGS_HOUR
+$STRINGS_HOUR $NAMEPHONE
 
 - test $STRINGS_HOUR
 
