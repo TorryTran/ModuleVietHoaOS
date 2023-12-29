@@ -3,8 +3,8 @@
 # Thiết lập các biến cần thiết
 NAMEPHONE=$(getprop ro.product.marketname) # vd: Xiaomi 13
 CODEPHONE=$(getprop ro.product.device) # vd: fuxi
-DATE=$(date +'%H:%M') # vd: 01/01/2024
-TIME=$(date +'%d/%m/%Y') # vd: 24:59
+TIME=$(date +'%H:%M') # vd: 01/01/2024
+DATE=$(date +'%d/%m/%Y') # vd: 24:59
 
 # Tiêu đề và nội dung xuất hiện trên thanh thông báo điện thoại khi mới flash module việt hoá.
 TIEU_DE_THONG_BAO="Thông báo từ module"
@@ -16,14 +16,17 @@ su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '
 # Hiện thị thông báo trước màn hình flash ứng dụng magisk || NOTIFICATION.txt
 # echo; NOTIFICATION=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/NOTIFICATION.txt) > /dev/null 2>&1; echo "$NOTIFICATION" > NOTIFICATION.txt; cat NOTIFICATION.txt; rm -rf NOTIFICATION.txt
 
-#
+# Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
 echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-ĐANG THỬ NGHIỆM 
+ĐANG THỬ NGHIỆM SCRIPT 
 
 BẠN ĐANG DÙNG $NAMEPHONE CÓ MÃ LÀ: $CODEPHONE
 
 BÂY GIỜ LÀ: $TIME NGÀY $DATE
 
-=====================[ KẾT THÚC ]====================="
+=====================[ KẾT THÚC ]=====================
+"
+
+# Kết thúc script trực tuyến
