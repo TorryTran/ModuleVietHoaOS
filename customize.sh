@@ -1,7 +1,6 @@
 #!/system/bin/sh
 
 # Thiết lập các biến cần thiết
-NAMEPHONE=$(getprop ro.product.marketname) # vd: Xiaomi 13
 CODEPHONE=$(getprop ro.product.device) # vd: fuxi
 TIME=$(date +'%H:%M') # vd: 01/01/2024
 DATE=$(date +'%d/%m/%Y') # vd: 24:59
@@ -37,9 +36,11 @@ echo -n "
 
 • $STRINGS_HOUR
 
-• Thiết bị $NAMEPHONE của bạn chưa có bản vá lỗi nào!
+• Telegram channel: @VietHoaHyperOS
 
-• Telegram: @VietHoaHyperOS || @VietHoaHyper
+• Telegram group: @VietHoaHyper
+
+• Telegram author: @TorryTran
 
 =====================[ KẾT THÚC ]=====================
 " # Dấu ngoặc kép này thay cho nút xuống dòng
