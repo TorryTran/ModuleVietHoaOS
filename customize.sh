@@ -15,15 +15,27 @@ service=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/
 echo "$service" > /data/adb/modules_update/VietHoaHyperOS/script/update_script
 su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '$NOI_DUNG_THONG_BAO'" > /dev/null 2>&1
 
+# Thông báo hiện theo thời gian
+HOUR=$(date +%H%M)
+if (( HOUR >= 1900 && HOUR <= 2159 )); then
+    STRINGS_HOUR="- Chúc bạn buổi tối vui vẻ 🌜"
+elif (( HOUR >= 2200 && HOUR <= 2359 )); then
+    STRINGS_HOUR="- Flash file việt hoá xong đi ngủ là đẹp 😴"
+elif (( HOUR >= 000 && HOUR <= 459 )); then
+    STRINGS_HOUR="- Giờ này còn flash module việt hoá thì tôi tin chắc bạn là một thiên thần rồi 👻"
+elif (( HOUR >= 500 && HOUR <= 1059 )); then
+    STRINGS_HOUR="- Chúc bạn buổi sáng vui vẻ 🌅"
+elif (( HOUR >= 1100 && HOUR <= 1259 )); then
+    STRINGS_HOUR="- Chúc bạn buổi trưa vui vẻ ⛅"
+elif (( HOUR >= 1300 && HOUR <= 1859 )); then
+    STRINGS_HOUR="- Chúc bạn buổi chiều vui vẻ 🌄"
+fi
+
 # Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
 echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-ĐANG THỬ NGHIỆM SCRIPT 
-
-BẠN ĐANG DÙNG $NAMEPHONE CÓ MÃ LÀ: $CODEPHONE
-
-BÂY GIỜ LÀ: $TIME NGÀY $DATE
+$STRINGS_HOUR
 
 =====================[ KẾT THÚC ]=====================
 " # Dấu ngoặc kép này thay cho nút xuống dòng
