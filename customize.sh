@@ -31,6 +31,7 @@ elif (( HOUR >= 1300 && HOUR <= 1859 )); then
     STRINGS_HOUR="- Chúc bạn buổi chiều vui vẻ 🌄"
 fi
 
+echo "$STRINGS_HOUR"
 # Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
 echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
