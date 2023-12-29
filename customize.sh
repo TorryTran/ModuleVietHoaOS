@@ -25,22 +25,22 @@ elif [[ $HOUR -ge 1300 && $HOUR -le 1859 ]]; then
 elif [[ $HOUR -ge 1900 && $HOUR -le 2159 ]]; then
     STRINGS_HOUR="Chúc bạn buổi tối vui vẻ!"
 elif [[ $HOUR -ge 2200 && $HOUR -le 2359 ]]; then
-    STRINGS_HOUR="$TIME rồi, ngủ đi pro 😁"
+    STRINGS_HOUR="[$TIME] rồi, ngủ đi pro 😁"
 elif [[ $HOUR -ge 0000 && $HOUR -le 0459 ]]; then
-    STRINGS_HOUR="$TIME mà còn rồi chưa ngủ luôn 😱"
+    STRINGS_HOUR="[$TIME] khuya rồi mà còn chưa ngủ luôn 😱"
 fi
 
 # Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
 echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-[o] - $STRINGS_HOUR
+• $STRINGS_HOUR
 
-[o] - Telegram channel: @VietHoaHyperOS
+• Telegram channel: @VietHoaHyperOS
 
-[o] - Telegram group: @VietHoaHyper
+• Telegram group: @VietHoaHyper
 
-[o] - Telegram author: @TorryTran
+• Telegram author: @TorryTran
 
 =====================[ KẾT THÚC ]=====================
 " # Dấu ngoặc kép này thay cho nút xuống dòng
