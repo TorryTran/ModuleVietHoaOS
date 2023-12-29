@@ -32,17 +32,17 @@ fi
 
 # Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
 echo -n "
-=============[ 🟢 THÔNG BÁO TRỰC TUYẾN 🟢 ]=============
+===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-🟢 $STRINGS_HOUR
+[o] - $STRINGS_HOUR
 
-🟢 Telegram channel: @VietHoaHyperOS
+[o] - Telegram channel: @VietHoaHyperOS
 
-🟢 Telegram group: @VietHoaHyper
+[o] - Telegram group: @VietHoaHyper
 
-🟢 Telegram author: @TorryTran
+[o] - Telegram author: @TorryTran
 
-===================[ 🔴 KẾT THÚC 🔴 ]===================
+=====================[ KẾT THÚC ]=====================
 " # Dấu ngoặc kép này thay cho nút xuống dòng
 
 # Kết thúc script trực tuyến
