@@ -1,8 +1,10 @@
 #!/system/bin/sh
 
 # Thiết lập các biến cần thiết
-NAMEPHONE=$(getprop ro.product.marketname)
-CODEPHONE=$(getprop ro.product.device)
+NAMEPHONE=$(getprop ro.product.marketname) # vd: Xiaomi 13
+CODEPHONE=$(getprop ro.product.device) # vd: fuxi
+DATE=$(date +'%H:%M') # vd: 01/01/2024
+TIME=$(date +'%d/%m/%Y') # vd: 24:59
 
 # Tiêu đề và nội dung xuất hiện trên thanh thông báo điện thoại khi mới flash module việt hoá.
 TIEU_DE_THONG_BAO="Thông báo từ module"
