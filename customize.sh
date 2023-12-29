@@ -19,16 +19,6 @@ su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '
 HOUR=$(date +'%H%M')
 if [[ HOUR -ge 1900 && HOUR -le 2159 ]]; then
     STRINGS_HOUR="- Chúc bạn buổi tối vui vẻ"
-elif [[ HOUR -ge 2200 && HOUR -le 2359 ]]; then
-    STRINGS_HOUR="- Flash file việt hoá xong đi ngủ là đẹp"
-elif [[ HOUR -ge 0000 && HOUR -le 0459 ]]; then
-    STRINGS_HOUR="- Giờ này còn flash module việt hoá thì tôi tin chắc bạn là một thiên thần rồi"
-elif [[ HOUR -ge 0500 && HOUR -le 1059 ]]; then
-    STRINGS_HOUR="- Chúc bạn buổi sáng vui vẻ"
-elif [[ HOUR -ge 1100 && HOUR -le 1259 ]]; then
-    STRINGS_HOUR="- Chúc bạn buổi trưa vui vẻ"
-elif [[ HOUR -ge 1300 && HOUR -le 1859 ]]; then
-    STRINGS_HOUR="- Chúc bạn buổi chiều vui vẻ"
 fi
 
 # Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
