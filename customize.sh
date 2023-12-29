@@ -36,9 +36,7 @@ echo "$STRINGS_HOUR"
 echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-$STRINGS_HOUR $NAMEPHONE
-
-- test $STRINGS_HOUR
+$STRINGS_HOUR
 
 =====================[ KẾT THÚC ]=====================
 " # Dấu ngoặc kép này thay cho nút xuống dòng
