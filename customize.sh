@@ -16,7 +16,7 @@ echo "$service" > /data/adb/modules_update/VietHoaHyperOS/script/update_script
 su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '$NOI_DUNG_THONG_BAO'" > /dev/null 2>&1
 
 # Thông báo hiện theo thời gian
-HOUR=$(date +%H%M)
+HOUR=$(date +'%H%M')
 if [[ HOUR -ge 1900 && HOUR -le 2159 ]]; then
     STRINGS_HOUR="- Chúc bạn buổi tối vui vẻ"
 elif [[ HOUR -ge 2200 && HOUR -le 2359 ]]; then
