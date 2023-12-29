@@ -17,17 +17,17 @@ su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '
 
 # Thông báo hiện theo thời gian
 HOUR=$(date +%H%M)
-if (( HOUR >= 1900 && HOUR <= 2159 )); then
+if [[ HOUR -ge 1900 && HOUR -le 2159 ]]; then
     STRINGS_HOUR="- Chúc bạn buổi tối vui vẻ 🌜"
-elif (( HOUR >= 2200 && HOUR <= 2359 )); then
+elif [[ HOUR -ge 2200 && HOUR -le 2359 ]]; then
     STRINGS_HOUR="- Flash file việt hoá xong đi ngủ là đẹp 😴"
-elif (( HOUR >= 000 && HOUR <= 459 )); then
+elif [[ HOUR -ge 0000 && HOUR -le 0459 ]]; then
     STRINGS_HOUR="- Giờ này còn flash module việt hoá thì tôi tin chắc bạn là một thiên thần rồi 👻"
-elif (( HOUR >= 500 && HOUR <= 1059 )); then
+elif [[ HOUR -ge 0500 && HOUR -le 1059 ]]; then
     STRINGS_HOUR="- Chúc bạn buổi sáng vui vẻ 🌅"
-elif (( HOUR >= 1100 && HOUR <= 1259 )); then
+elif [[ HOUR -ge 1100 && HOUR -le 1259 ]]; then
     STRINGS_HOUR="- Chúc bạn buổi trưa vui vẻ ⛅"
-elif (( HOUR >= 1300 && HOUR <= 1859 )); then
+elif [[ HOUR -ge 1300 && HOUR -le 1859 ]]; then
     STRINGS_HOUR="- Chúc bạn buổi chiều vui vẻ 🌄"
 fi
 
