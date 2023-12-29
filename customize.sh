@@ -37,6 +37,8 @@ echo -n "
 
 $STRINGS_HOUR
 
+- test $STRINGS_HOUR
+
 =====================[ KẾT THÚC ]=====================
 " # Dấu ngoặc kép này thay cho nút xuống dòng
 
