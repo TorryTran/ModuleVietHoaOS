@@ -34,13 +34,13 @@ fi
 echo -n "
 =============[ 🟢 THÔNG BÁO TRỰC TUYẾN 🟢 ]=============
 
-• $STRINGS_HOUR
+🟢 $STRINGS_HOUR
 
-• Telegram channel: @VietHoaHyperOS
+🟢 Telegram channel: @VietHoaHyperOS
 
-• Telegram group: @VietHoaHyper
+🟢 Telegram group: @VietHoaHyper
 
-• Telegram author: @TorryTran
+🟢 Telegram author: @TorryTran
 
 ===================[ 🔴 KẾT THÚC 🔴 ]===================
 " # Dấu ngoặc kép này thay cho nút xuống dòng
