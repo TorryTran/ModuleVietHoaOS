@@ -18,7 +18,7 @@ su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '
 # Thông báo hiện theo thời gian
 HOUR=$(date +'%H%M')
 if [[ HOUR -ge 1900 && HOUR -le 2159 ]]; then
-    STRINGS_HOUR="- Chúc bạn buổi tối vui vẻ"
+    STRINGS_HOUR="Chúc bạn buổi tối vui vẻ"
 fi
 
 # Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
