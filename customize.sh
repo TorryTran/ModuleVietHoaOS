@@ -39,7 +39,7 @@ echo -n "
 #! Telegram channel: @VietHoaHyperOS
 #! Telegram group: @VietHoaHyper          [$TIME]
 #! Telegram author: @TorryTran            [$DATE]
-=========================[ o ]========================
+======================================================
 " # Dấu ngoặc kép này thay cho nút xuống dòng
 
 # Kết thúc script trực tuyến
