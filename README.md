@@ -1,1 +1,1 @@
-🇻🇳 Telegram: @TorryTran
+Repo này dùng để điều hành module việt hoá, nó có thể cho hiển thị thông báo trên thanh trạng thái của điện thoại, xuất một thông tin ra màn hình flash của ứng dụng Magisk, cập nhật ota cho module việt hoá, chèn thêm script vào file service.sh của module 
