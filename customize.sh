@@ -31,12 +31,16 @@ elif [[ HOUR -ge 1300 && HOUR -le 1859 ]]; then
     STRINGS_HOUR="- Chúc bạn buổi chiều vui vẻ"
 fi
 
-echo "$STRINGS_HOUR"
 # Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
 echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
 $STRINGS_HOUR
+$NAMEPHONE
+$CODEPHONE
+$TIME
+$DATE
+$HOUR
 
 =====================[ KẾT THÚC ]=====================
 " # Dấu ngoặc kép này thay cho nút xuống dòng
