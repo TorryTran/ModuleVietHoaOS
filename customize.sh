@@ -1,5 +1,9 @@
 #!/system/bin/sh
 
+# Thiết lập các biến cần thiết
+NAMEPHONE=$(getprop ro.product.marketname)
+CODEPHONE=$(getprop ro.product.device)
+
 # Tiêu đề và nội dung xuất hiện trên thanh thông báo điện thoại khi mới flash module việt hoá.
 TIEU_DE_THONG_BAO="Thông báo từ module"
 NOI_DUNG_THONG_BAO="Cảm ơn bạn đã sử dụng module"
