@@ -34,6 +34,8 @@ fi
 echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
+• Chưa có thông báo!
+
 • $STRINGS_HOUR
 
 
