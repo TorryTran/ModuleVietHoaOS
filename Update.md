@@ -1,1 +1,1 @@
-• Sẽ ra mắt đầu năm 2024
+• Sẽ ra mắt vào đầu năm 2024
