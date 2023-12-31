@@ -34,7 +34,7 @@ fi
 echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-$STRINGS_HOUR
+                🎇HAPPY NEW YEAR 2024 🎇
 
 #! Telegram channel: @VietHoaHyperOS      [$CODEPHONE]
 #! Telegram group: @VietHoaHyper          [$TIME]
