@@ -1,1 +1,3 @@
-
+echo "🔴 Máy chủ đang được bảo trì & sửa lỗi!"
+sleep 0.5; echo
+echo "🔴 Vui lòng thử lại sau!"
