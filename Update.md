@@ -14,3 +14,5 @@ Lưu ý: zRAM cao quá không giúp máy đa nhiệm tốt hơn!
 • Thêm tùy chọn chặn quảng cáo bằng DNS hoặc hosts (hosts update liên tục)
 
 • Tùy chọn tải về cài đặt Emoji IOS hoặc Emoji Messenger
+
+• Thử nghiệm tính năng Fix thông báo, chạy nền cho ứng dụng (có thể hoạt động không ổn định)
