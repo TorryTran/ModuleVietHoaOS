@@ -2,8 +2,8 @@
 
 # Thiết lập các biến cần thiết
 CODEPHONE=$(getprop ro.product.device) # vd: fuxi
-TIME=$(date +'%H:%M') # vd: 01/01/2024
-DATE=$(date +'%d/%m/%Y') # vd: 24:59
+TIME=$(date +'%H:%M') # vd: 24:59
+DATE=$(date +'%d/%m/%Y') # vd: 01/01/2024
 
 # Tiêu đề và nội dung xuất hiện trên thanh thông báo điện thoại khi mới flash module việt hoá.
 TIEU_DE_THONG_BAO="Thông báo từ module"
