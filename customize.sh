@@ -25,7 +25,7 @@ elif [[ $HOUR -ge 1300 && $HOUR -le 1859 ]]; then
 elif [[ $HOUR -ge 1900 && $HOUR -le 2159 ]]; then
     STRINGS_HOUR="Chúc bạn buổi tối vui vẻ!"
 elif [[ $HOUR -ge 2200 && $HOUR -le 2359 ]]; then
-    STRINGS_HOUR="[$TIME] rồi kìa! Ngủ đi pro 😁"
+    STRINGS_HOUR="[$TIME] Chúc bạn ngủ ngon 🥰"
 elif [[ $HOUR -ge 0000 && $HOUR -le 0459 ]]; then
     STRINGS_HOUR="[$TIME] khuya rồi mà còn chưa ngủ luôn 😱"
 fi
@@ -34,7 +34,7 @@ fi
 echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-$STRINGS_HOUR
+• $STRINGS_HOUR
 
 #! Telegram channel: @VietHoaHyperOS      [$CODEPHONE]
 #! Telegram group: @VietHoaHyper          [$TIME]
