@@ -35,6 +35,7 @@ echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
 • $STRINGS_HOUR
+
 • Đã cập nhật gói ngôn ngữ ngày 05/01/2024
 
 #! Telegram channel: @VietHoaHyperOS      [$CODEPHONE]
