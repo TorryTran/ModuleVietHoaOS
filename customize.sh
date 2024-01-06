@@ -43,5 +43,5 @@ echo -n "
 #! Telegram author: @TorryTran            [$DATE]
 ======================================================
 " # Dấu ngoặc kép này thay cho nút xuống dòng
-
+sleep 0.3; echo "Đang tải dữ liệu..."
 # Kết thúc script trực tuyến
