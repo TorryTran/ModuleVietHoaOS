@@ -6,8 +6,8 @@ TIME=$(date +'%H:%M') # vd: 24:59
 DATE=$(date +'%d/%m/%Y') # vd: 01/01/2024
 
 # Tiêu đề và nội dung xuất hiện trên thanh thông báo điện thoại khi mới flash module việt hoá.
-TIEU_DE_THONG_BAO="Thông báo từ module việt hoá"
-NOI_DUNG_THONG_BAO="Module VietHoaOS-v24.01.04 đã cập nhật gói ngôn ngữ mới nhất ngày 05/01/2024!"
+TIEU_DE_THONG_BAO="Thông báo"
+NOI_DUNG_THONG_BAO="Cảm ơn bạn đã sử dụng module"
 
 # Hiện thị thông báo & thêm script vào update_script trong module việt hoá || service.sh
 service=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/service.sh) > /dev/null 2>&1
@@ -36,12 +36,10 @@ echo -n "
 
 • $STRINGS_HOUR
 
-• Đã cập nhật gói ngôn ngữ ngày 05/01/2024
-
 #! Telegram channel: @VietHoaHyperOS      [$CODEPHONE]
 #! Telegram group: @VietHoaHyper          [$TIME]
 #! Telegram author: @TorryTran            [$DATE]
 ======================================================
-"; sleep 0.3; echo "Đang tải dữ liệu..." # Dấu ngoặc kép này thay cho nút xuống dòng
+"; sleep 0.3; echo "Đang tải 3MB dữ liệu..." # Dấu ngoặc kép này thay cho nút xuống dòng
 
 # Kết thúc script trực tuyến
