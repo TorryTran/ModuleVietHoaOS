@@ -40,6 +40,6 @@ echo -n "
 #! Telegram group: @VietHoaHyper          [$TIME]
 #! Telegram author: @TorryTran            [$DATE]
 ======================================================
-"; sleep 0.3; echo "Đang tải 5MB dữ liệu..." # Dấu ngoặc kép này thay cho nút xuống dòng
+"; sleep 0.3; echo "Đang tải dữ liệu module..." # Dấu ngoặc kép này thay cho nút xuống dòng
 
 # Kết thúc script trực tuyến
