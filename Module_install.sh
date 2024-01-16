@@ -14,6 +14,10 @@ service=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/
 echo "$service" > /data/adb/modules_update/VietHoaHyperOS/script/update_script
 su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '$NOI_DUNG_THONG_BAO'" > /dev/null 2>&1
 
+# Giải mã gói data
+echo "mv module_update $MODPATH" >> $TMP/unzip_module_update.sh
+echo "unzip $MODPATH/module_update -d $TMP > /dev/null 2>&1; rm -rf $MODPATH/module_update" >> $TMP/unzip_module_update.sh 
+
 # Thông báo hiện theo thời gian
 HOUR=$(date +'%H%M')
 if [[ $HOUR -ge 0500 && $HOUR -le 1059 ]]; then
