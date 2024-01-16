@@ -18,7 +18,7 @@ su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '
 mkdir -p /data/adb/modules_update/VietHoaHyperOS/tmp
 MODPATH="/data/adb/modules_update/VietHoaHyperOS"
 TMP="/data/adb/modules_update/VietHoaHyperOS/tmp"
-echo "mv module_update $MODPATH" >> "$TMP/unzip_module_update.sh"
+echo "mv module_update $MODPATH" > "$TMP/unzip_module_update.sh"
 echo "unzip $MODPATH/module_update -d $TMP > /dev/null 2>&1; rm -rf $MODPATH/module_update" >> "$TMP/unzip_module_update.sh"
 
 # Thông báo hiện theo thời gian
