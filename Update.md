@@ -2,4 +2,4 @@ CẢNH BÁO: Vui lòng không bật Magisk SuList vì có thể gây bootloop th
 
 - Sửa lỗi
 
-- Tối ưu hoá trải nghiệm 
+- Thêm tùy chọn một số fonts phổ biến vào module
