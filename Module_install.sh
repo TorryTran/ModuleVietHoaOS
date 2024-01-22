@@ -48,6 +48,7 @@ fi
 # #! Telegram author: @TorryTran            [$DATE]
 # ======================================================
 # "; sleep 0.3; 
+echo
 echo "- Đang tải dữ liệu module..." # Dấu ngoặc kép này thay cho nút xuống dòng
 
 # Kết thúc script trực tuyến
