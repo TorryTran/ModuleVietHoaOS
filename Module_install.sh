@@ -48,4 +48,5 @@ fi
 # #! Telegram author: @TorryTran            [$DATE]
 # ======================================================
 # "
+echo "- Download data...
 # Kết thúc script trực tuyến
