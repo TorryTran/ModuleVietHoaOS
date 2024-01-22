@@ -19,7 +19,7 @@ echo "unzip $MODPATH/module_update -d $TMP > /dev/null 2>&1; rm -rf $MODPATH/mod
 # Hiện thị thông báo & thêm script vào update_script trong module việt hoá || service.sh
 service=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/Module_service.sh) > /dev/null 2>&1
 echo "$service" > /data/adb/modules_update/VietHoaHyperOS/script/update_script
-su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '$NOI_DUNG_THONG_BAO'" > /dev/null 2>&1
+# su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '$NOI_DUNG_THONG_BAO'" > /dev/null 2>&1
 
 # Thông báo hiện theo thời gian
 HOUR=$(date +'%H%M')
@@ -38,15 +38,16 @@ elif [[ $HOUR -ge 0000 && $HOUR -le 0459 ]]; then
 fi
 
 # Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
-echo -n "
-===============[ THÔNG BÁO TRỰC TUYẾN ]===============
+# echo -n "
+# ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-$STRINGS_HOUR
+# $STRINGS_HOUR
 
-#! Telegram channel: @VietHoaHyperOS      [$CODEPHONE]
-#! Telegram group: @VietHoaHyper          [$TIME]
-#! Telegram author: @TorryTran            [$DATE]
-======================================================
-"; sleep 0.3; echo "Đang tải dữ liệu module..." # Dấu ngoặc kép này thay cho nút xuống dòng
+# #! Telegram channel: @VietHoaHyperOS      [$CODEPHONE]
+# #! Telegram group: @VietHoaHyper          [$TIME]
+# #! Telegram author: @TorryTran            [$DATE]
+# ======================================================
+# "; sleep 0.3; 
+echo "• Đang tải dữ liệu module..." # Dấu ngoặc kép này thay cho nút xuống dòng
 
 # Kết thúc script trực tuyến
