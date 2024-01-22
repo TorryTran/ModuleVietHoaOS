@@ -41,7 +41,7 @@ fi
 echo -n "
 ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-❤️ Cảm ơn thầy Teacher Word (@HyperVN) đã ủng hộ 100k
+$STRINGS_HOUR
 
 #! Telegram channel: @VietHoaHyperOS      [$CODEPHONE]
 #! Telegram group: @VietHoaHyper          [$TIME]
