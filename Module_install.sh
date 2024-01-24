@@ -47,5 +47,5 @@ echo -n "
 #! Telegram group: @VietHoaHyper          [$TIME]
 #! Telegram author: @TorryTran            [$DATE]
 ======================================================
-"
+"; echo "- Download data module..."
 # Kết thúc script trực tuyến
