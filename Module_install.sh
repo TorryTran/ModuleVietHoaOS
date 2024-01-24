@@ -38,15 +38,14 @@ elif [[ $HOUR -ge 0000 && $HOUR -le 0459 ]]; then
 fi
 
 # Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
-# echo -n "
-# ===============[ THÔNG BÁO TRỰC TUYẾN ]===============
+echo -n "
+===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-# $STRINGS_HOUR
+$STRINGS_HOUR
 
-# #! Telegram channel: @VietHoaHyperOS      [$CODEPHONE]
-# #! Telegram group: @VietHoaHyper          [$TIME]
-# #! Telegram author: @TorryTran            [$DATE]
-# ======================================================
-# "
-echo "- Download data..."
+#! Telegram channel: @VietHoaHyperOS      [$CODEPHONE]
+#! Telegram group: @VietHoaHyper          [$TIME]
+#! Telegram author: @TorryTran            [$DATE]
+======================================================
+"
 # Kết thúc script trực tuyến
