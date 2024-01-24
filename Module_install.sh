@@ -39,7 +39,7 @@ fi
 
 # Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
 echo -n "
-===============[ THÔNG BÁO TRỰC TUYẾN ]===============
+=============[ MODULE VIỆT HOÁ HYPEROS ]=============
 
 $STRINGS_HOUR
 
