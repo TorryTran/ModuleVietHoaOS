@@ -39,9 +39,9 @@ fi
 
 # Đây là thông báo xuất ra màn hình khi flash module trên ứng dụng Magisk
 echo -n "
-=============[ MODULE VIỆT HOÁ HYPEROS ]=============
+===============[ THÔNG BÁO TRỰC TUYẾN ]===============
 
-$STRINGS_HOUR
+• $STRINGS_HOUR
 
 #! Telegram channel: @VietHoaHyperOS      [$CODEPHONE]
 #! Telegram group: @VietHoaHyper          [$TIME]
