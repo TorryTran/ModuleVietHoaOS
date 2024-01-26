@@ -49,6 +49,6 @@ fi
 # ======================================================
 #"; echo "- Download data module..."
 # Kết thúc script trực tuyến
-echo "- Version data module: 24.01.25"
+echo "- Data update: 25/01/2024"
 sleep 0.3
 echo "- Download data module..."
