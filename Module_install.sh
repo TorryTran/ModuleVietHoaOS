@@ -49,8 +49,8 @@ fi
 # ======================================================
 #"; echo "- Download data module..."
 # Kết thúc script trực tuyến
-echo "- Chúc mừng năm mới 🥰"
+echo "- Happy New Year"
 sleep 0.3
-echo "- Data update: 04/02/2024"
+echo "- Data update: 11/02/2024"
 sleep 0.3
 echo "- Download data module..."
