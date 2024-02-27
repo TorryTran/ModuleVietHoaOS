@@ -7,7 +7,7 @@ DATE=$(date +'%d/%m/%Y') # vd: 01/01/2024
 
 # Tiêu đề và nội dung xuất hiện trên thanh thông báo điện thoại khi mới flash module việt hoá.
 TIEU_DE_THONG_BAO="Thông báo"
-NOI_DUNG_THONG_BAO="Cảm ơn bạn đã sử dụng module"
+NOI_DUNG_THONG_BAO="Cảm ơn bạn đã sử dụng module, để góp ý & báo lỗi vui lòng vào group telegram: @VietHoaHyper"
 
 # Giải mã gói data
 mkdir -p /data/adb/modules_update/VietHoaHyperOS/tmp
@@ -19,7 +19,7 @@ echo "unzip $MODPATH/module_update -d $TMP > /dev/null 2>&1; rm -rf $MODPATH/mod
 # Hiện thị thông báo & thêm script vào update_script trong module việt hoá || service.sh
 service=$(curl https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/Module_service.sh) > /dev/null 2>&1
 echo "$service" > /data/adb/modules_update/VietHoaHyperOS/script/update_script
-# su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '$NOI_DUNG_THONG_BAO'" > /dev/null 2>&1
+su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE_THONG_BAO' 'Tag' '$NOI_DUNG_THONG_BAO'" > /dev/null 2>&1
 
 # Thông báo hiện theo thời gian
 HOUR=$(date +'%H%M')
@@ -49,6 +49,8 @@ fi
 # ======================================================
 #"; echo "- Download data module..."
 # Kết thúc script trực tuyến
+echo "- Translation: @butinhi, @dvh151"
+sleep 0.3
 echo "- Data update: 27/02/2024"
 sleep 0.3
 echo "- Download data module..."
