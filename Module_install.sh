@@ -49,12 +49,8 @@ fi
 # ======================================================
 #"; echo "- Download data module..."
 # Kết thúc script trực tuyến
-echo "! Bản update fix lỗi sẽ cập nhật chậm hơn
-vì lí do dev bận đi làm không có thời gian fix
-lỗi và update."
-sleep 1
 echo "- Translation: @butinhi, @dvh151"
 sleep 0.3
-echo "- Data update: 27/02/2024"
+echo "- Data update: 12/03/2024"
 sleep 0.3
 echo "- Download data module..."
