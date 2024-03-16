@@ -49,10 +49,10 @@ fi
 # ======================================================
 #"; echo "- Download data module..."
 # Kết thúc script trực tuyến
-echo "- Translation: @butinhi, @dvh151, @TorryTran"
-sleep 0.3
 echo "- Thank you for donating:"
 echo "  @mrcrack68 20k"
+sleep 0.3
+echo "- Translation: @butinhi, @dvh151, @TorryTran"
 sleep 0.3
 echo "- Data update: 15/03/2024"
 sleep 0.3
