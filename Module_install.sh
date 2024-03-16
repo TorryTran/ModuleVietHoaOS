@@ -51,6 +51,7 @@ fi
 # Kết thúc script trực tuyến
 echo "- Thank you for donating:"
 echo "  @mrcrack68 20k"
+echo "  @connectedhope 19k"
 sleep 0.3
 echo "- Translation: @butinhi, @dvh151, @TorryTran"
 sleep 0.3
