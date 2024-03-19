@@ -50,7 +50,7 @@ fi
 #"; echo "- Download data module..."
 # Kết thúc script trực tuyến
 echo "- Thank you for donating:"
-echo "  @mrcrack68 20k | @connectedhope 19k | @NgocJaian 20k"
+echo "  @mrcrack68 | @connectedhope | @NgocJaian"
 sleep 0.3
 echo "- Translation: @butinhi, @dvh151, @TorryTran"
 sleep 0.3
