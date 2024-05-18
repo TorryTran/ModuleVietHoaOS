@@ -51,6 +51,6 @@ fi
 # Kết thúc script trực tuyến
 echo "- Translation: @butinhi, @dvh151, @TorryTran"
 sleep 0.3
-echo "- Data update: 12/05/2024"
+echo "- Data update: 18/05/2024"
 sleep 0.3
 echo "- Download 4.5MB data module..."
