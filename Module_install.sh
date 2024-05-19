@@ -49,8 +49,10 @@ fi
 # ======================================================
 #"; echo "- Download data module..."
 # Kết thúc script trực tuyến
+echo "! Tính năng sao lưu ảnh lên GG Photos miễn phí
+  có thể bị xoá trong tương lai :("
 echo "- Translation: @butinhi, @dvh151, @TorryTran"
 sleep 0.3
-echo "- Data update: 18/05/2024"
+echo "- Data update: 19/05/2024"
 sleep 0.3
 echo "- Download 4.5MB data module..."
