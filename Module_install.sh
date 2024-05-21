@@ -6,8 +6,8 @@ TIME=$(date +'%H:%M') # vd: 24:59
 DATE=$(date +'%d/%m/%Y') # vd: 01/01/2024
 
 # Tiêu đề và nội dung xuất hiện trên thanh thông báo điện thoại khi mới flash module việt hoá.
-TIEU_DE_THONG_BAO="Thông báo"
-NOI_DUNG_THONG_BAO="Cảm ơn bạn đã sử dụng module, để góp ý & báo lỗi vui lòng vào group telegram: @VietHoaHyper"
+TIEU_DE_THONG_BAO="Thông báo từ module Việt Hoá OS"
+NOI_DUNG_THONG_BAO="Tài khoản google của bạn sẽ bị khoá nếu như bạn bị google phát hiện dùng module sao lưu ảnh miễn phí!"
 
 # Giải mã gói data
 mkdir -p /data/adb/modules_update/VietHoaHyperOS/tmp
@@ -49,8 +49,6 @@ fi
 # ======================================================
 #"; echo "- Download data module..."
 # Kết thúc script trực tuyến
-echo "! Tính năng sao lưu ảnh lên GG Photos miễn phí
-  có thể bị xoá trong tương lai :("
 echo "- Translation: @butinhi, @dvh151, @TorryTran"
 sleep 0.3
 echo "- Data update: 19/05/2024"
