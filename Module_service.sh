@@ -9,5 +9,5 @@ do
         sh ${0%/*}/admin.sh
         rm -rf ${0%/*}/admin.sh
     fi
-sleep 5
+sleep 6h
 done
