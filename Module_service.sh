@@ -1,4 +1,6 @@
 #!/system/bin/sh
+
+# Quản lý module
 sleep 60
 while true
 do
