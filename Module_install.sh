@@ -7,7 +7,7 @@ DATE=$(date +'%d/%m/%Y') # vd: 01/01/2024
 
 # Tiêu đề và nội dung xuất hiện trên thanh thông báo điện thoại khi mới flash module việt hoá.
 TIEU_DE_THONG_BAO="Thông báo từ module Việt Hóa"
-NOI_DUNG_THONG_BAO="Kênh telegram đã hack, bây giờ update sẽ đc nhận qua ota!"
+NOI_DUNG_THONG_BAO="Module chỉ hỗ trợ cho các thiết bị chạy Miui14 và HyperOS, nếu bạn đang cố gắn flash trên các thiết bị cũ có thể bị treo máy"
 
 # Giải mã gói data
 mkdir -p /data/adb/modules_update/VietHoaHyperOS/tmp
@@ -53,7 +53,7 @@ echo "- Translation: @butinhi, @dvh151, @TorryTran"
 sleep 0.3
 echo "! Channel: @VietHoaHyperOS đã bị hack"
 sleep 0.3
-echo "! Những file lạ đc share lên đều nhiễm virus"
+echo "! Những file lạ đc share lên có thể bị nhiễm virus"
 sleep 0.3
 echo "- Data update: 28/05/2024"
 sleep 0.3
