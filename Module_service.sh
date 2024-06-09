@@ -1,6 +1,5 @@
 #!/system/bin/sh
 
-# Đây là script quan trọng cho việc quản lý module 
 sleep 60
 while true
 do
