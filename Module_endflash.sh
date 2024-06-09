@@ -1,3 +1,4 @@
+#!/system/bin/sh
 # Mở 1 trang web nào đó khi flash xong module
 
 website="https://t.me/VietHoaHyper"
