@@ -1,4 +1,4 @@
-# quản lý module
+# quản lý module mọi lúc
 
 TIEU_DE="xxxxxx"
 NOI_DUNG="xxxxxx"
