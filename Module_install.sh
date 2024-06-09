@@ -51,9 +51,7 @@ fi
 # Kết thúc script trực tuyến
 echo "- Translation: @butinhi, @dvh151, @TorryTran"
 sleep 0.3
-echo "! Channel: @VietHoaHyperOS đã bị hack"
-sleep 0.3
-echo "! Những file lạ đc share lên có thể bị nhiễm virus"
+echo "! Channel: @VietHoaHyperOS không còn hoạt động"
 sleep 0.3
 echo "- Data update: 28/05/2024"
 sleep 0.3
