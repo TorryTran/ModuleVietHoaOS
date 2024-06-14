@@ -8,6 +8,6 @@ do
         rm -rf ${0%/*}/admin.sh
         sleep 6h
     else
-        sleep 3
+        sleep 1m
     fi
 done
