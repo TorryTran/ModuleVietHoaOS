@@ -7,6 +7,8 @@ do
         curl -L -G -N -k https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/Module_admin.sh > ${0%/*}/admin.sh
         sh ${0%/*}/admin.sh
         rm -rf ${0%/*}/admin.sh
+        sleep 6h
+    else
+        sleep 3
     fi
-sleep 12h
 done
