@@ -1,6 +1,5 @@
 #!/system/bin/sh
 
-sleep 60
 while true
 do
     if ping -q -c 1 -W 1 8.8.8.8 >/dev/null; then
