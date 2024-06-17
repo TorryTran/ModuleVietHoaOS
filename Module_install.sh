@@ -53,6 +53,6 @@ echo "- Translation: @butinhi, @dvh151, @TorryTran"
 sleep 0.3
 echo "! Channel: @VietHoaHyperOS không còn hoạt động"
 sleep 0.3
-echo "- Data update: 13/06/2024"
+echo "- Data update: 17/06/2024"
 sleep 0.3
 echo "- Download 4.5MB data module..."
