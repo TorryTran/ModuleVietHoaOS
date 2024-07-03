@@ -16,6 +16,8 @@ unzip -o ${0%/*}/new_update -d $MODULE
 if [ -f $MODULE/update ]; then
     NOFI
     rm -rf ${0%/*}/new_update
+else
+    rm -rf ${0%/*}/new_update
 fi; }
 
 # # Nofi chỉ hiện một lần cho đến khi đảo ngược giá trị của TRUE sang FALSE, mỗi lần đảo ngược giá trị cho nhau thì lại xuất hiện đc 1 thông báo, phòng trường hợp thiết bị bị spam nhiều thông báo
