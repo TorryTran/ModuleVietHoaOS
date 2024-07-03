@@ -5,8 +5,8 @@ MODULE="/data/adb/modules/VietHoaHyperOS/"
 
 # Xuất thông báo
 NOFI() {
-TIEU_DE="Module Việt Hoá HyperOS"
-NOI_DUNG="Test..."
+TIEU_DE="Module Việt Hoá"
+NOI_DUNG="Đã cập nhật thành công toàn bộ gói việt hoá mới nhất, hãy khởi động lại điện thoại để các gói việt hoá được đồng bộ vào hệ thống! Nếu trong điện thoại của bạn có mục nào chưa có tiếng việt thì bạn có thể báo cáo lại với admin ở nhóm telegram để fix nhé^^ Cảm ơn bạn đã sử dụng module"
 su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE' 'Tag' '$NOI_DUNG'"; }
 
 # Cập nhật gói việt hoá trong nền cho mọi người dùng
