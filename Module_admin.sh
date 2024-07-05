@@ -6,7 +6,7 @@ MODULE="/data/adb/modules/VietHoaHyperOS/"
 # Xuất thông báo
 NOFI() {
 TIEU_DE="Module Việt Hoá"
-NOI_DUNG="Đã cập nhật thành công toàn bộ gói việt hoá mới nhất, hãy khởi động lại điện thoại để các gói việt hoá được đồng bộ vào hệ thống! Nếu trong điện thoại của bạn có mục nào chưa có tiếng việt thì bạn có thể báo cáo lại với admin ở nhóm telegram để fix nhé^^ Cảm ơn bạn đã sử dụng module"
+NOI_DUNG="Đã cập nhật các chuỗi việt hoá mới nhất, sửa lỗi sai ngữ pháp trong tính năng \"Nhiệm vụ tự động\" | Update ngày: 05/07/2024"
 su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE' 'Tag' '$NOI_DUNG'"; }
 
 # Cập nhật gói việt hoá trong nền cho mọi người dùng
@@ -21,8 +21,8 @@ else
 fi; }
 
 # # Nofi chỉ hiện một lần cho đến khi đảo ngược giá trị của TRUE sang FALSE, mỗi lần đảo ngược giá trị cho nhau thì lại xuất hiện đc 1 thông báo, phòng trường hợp thiết bị bị spam nhiều thông báo
-TRUE=b
-FALSE=a
+TRUE=a
+FALSE=b
 cd /data/adb/modules/VietHoaHyperOS/script/
 if [ -f ${0%/*}/$TRUE ]; then
   rm -rf ${0%/*}/$TRUE
