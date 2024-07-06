@@ -29,6 +29,5 @@ if [ -f ${0%/*}/$TRUE ]; then
   touch ${0%/*}/$FALSE
   UPDATE
 elif [[ ! -e "$TRUE" ]] && [[ ! -e "$FALSE" ]]; then
-  NOFI
   touch ${0%/*}/$FALSE
 fi
