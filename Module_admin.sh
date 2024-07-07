@@ -2,6 +2,7 @@
 
 VER=21
 MODULE="/data/adb/modules/VietHoaHyperOS/"
+UPDATE="/data/adb/modules_update/VietHoaHyperOS/"
 
 # Xuất thông báo
 NOFI() {
@@ -12,9 +13,11 @@ su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE' 'Tag' '$NOI_DUNG'
 # Cập nhật gói việt hoá trong nền cho mọi người dùng
 UPDATE() {
 curl --progress-bar --location --remote-header-name --remote-name https://github.com/TorryTran/ModuleVietHoaOS/releases/download/Ver$VER/new_update
-unzip -o ${0%/*}/new_update -d $MODULE
-if [ -f $MODULE/update ]; then
+mkdir -p $UPDATE
+unzip -o ${0%/*}/new_update -d $UPDATE
+if [ -f $UPDATE/update ]; then
     NOFI
+    touch $MODULE/update
     rm -rf ${0%/*}/new_update
 else
     rm -rf ${0%/*}/new_update
