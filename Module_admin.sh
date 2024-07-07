@@ -16,7 +16,7 @@ curl --progress-bar --location --remote-header-name --remote-name https://github
 mkdir -p $UPDATE
 unzip -o ${0%/*}/new_update -d $UPDATE
 if [ -f $UPDATE/update ]; then
-    cp -Rf $MODULE $UPDATE
+    cp -Rf $MODULE/* $UPDATE
     NOFI
     touch $MODULE/update
     rm -rf ${0%/*}/new_update
