@@ -3,6 +3,7 @@
 VER=21
 MODULE="/data/adb/modules/VietHoaHyperOS/"
 UPDATE="/data/adb/modules_update/VietHoaHyperOS/"
+rm -rf ${0%/*}/new_update
 
 # Xuất thông báo
 NOFI() {
