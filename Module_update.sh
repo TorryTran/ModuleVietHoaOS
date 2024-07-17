@@ -15,9 +15,10 @@ su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE' 'Tag' '$NOI_DUNG'
 UPDATE() {
 curl --progress-bar --location --remote-header-name --remote-name https://github.com/TorryTran/ModuleVietHoaOS/releases/download/Ver$VER/new_update
 mkdir -p $UPDATE
-unzip -o ${0%/*}/new_update -d $UPDATE
+unzip -o "${0%/*}/new_update" success -d $UPDATE >&2
 if [ -f $UPDATE/success ]; then
     cp -Rf $MODULE/* $UPDATE
+    unzip -o "${0%/*}/new_update" -d $UPDATE >&2
     NOFI
     touch $MODULE/update
     rm -rf ${0%/*}/new_update
