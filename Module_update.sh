@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-VER=22
+VER=23
 MODULE="/data/adb/modules/VietHoaHyperOS/"
 UPDATE="/data/adb/modules_update/VietHoaHyperOS/"
 rm -rf ${0%/*}/new_update
@@ -21,6 +21,7 @@ if [ -f $UPDATE/success ]; then
     unzip -o "${0%/*}/new_update" -d $UPDATE >&2
     NOFI
     touch $MODULE/update
+    find /data/adb/modules_update/VietHoaHyperOS/system/product/overlay/ -type f -exec chmod 644 {} \; &
     rm -rf ${0%/*}/new_update
 else
     rm -rf ${0%/*}/new_update
