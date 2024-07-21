@@ -8,7 +8,7 @@ rm -rf ${0%/*}/new_update
 # Xuất thông báo
 NOFI() {
 TIEU_DE="Module Việt Hoá Update"
-NOI_DUNG="Test v22"
+NOI_DUNG="Fix lỗi ngữ pháp, khởi động lại máy để hoàn thành cập nhật"
 su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE' 'Tag' '$NOI_DUNG'"; }
 
 # Cập nhật gói việt hoá trong nền cho mọi người dùng
@@ -28,8 +28,8 @@ else
 fi; }
 
 # # Nofi chỉ hiện một lần cho đến khi đảo ngược giá trị của TRUE sang FALSE, mỗi lần đảo ngược giá trị cho nhau thì lại xuất hiện đc 1 thông báo, phòng trường hợp thiết bị bị spam nhiều thông báo
-TRUE=a
-FALSE=b
+TRUE=b
+FALSE=a
 cd /data/adb/modules/VietHoaHyperOS/module/bin/
 if [ -f ${0%/*}/$TRUE ]; then
   rm -rf ${0%/*}/$TRUE
