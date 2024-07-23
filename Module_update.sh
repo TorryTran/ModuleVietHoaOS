@@ -2,7 +2,7 @@
 
 # Xuất thông báo
 NOFI() {
-TIEU_DE="Module Việt Hoá Update"
+TIEU_DE="Module Việt Hoá || Ver: 23"
 NOI_DUNG="Bạn ơi! Module việt hoá cập nhật lại gói việt hoá rồi nhé, hãy bật kết nối mạng và flash lại module để nhận về phiên bản việt hoá mới nhất nhé ^^ vì do lỗi xung đột phân vùng nên mình sẽ dừng vĩnh viễn tính năng update trong nền!. Cảm ơn bạn đã sử dụng module"
 su -lp 2000 -c "cmd notification post -S bigtext -t '$TIEU_DE' 'Tag' '$NOI_DUNG'"; }
 
