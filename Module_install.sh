@@ -1,3 +1,3 @@
 #!/system/bin/sh
 
-echo "- Hello World"
+echo "- Telegram: @VietHoaOS"
