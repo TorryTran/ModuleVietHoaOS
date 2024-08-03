@@ -1,2 +1,1 @@
-echo "- Telegram: @VietHoaOS"
-echo "- test"
+echo "- Hello World"
