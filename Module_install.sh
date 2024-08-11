@@ -1,1 +1,2 @@
-echo "- Hello World"
+echo "- Test 1"
+echo "- Test 2"
