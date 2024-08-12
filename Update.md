@@ -1,6 +1,3 @@
-- Fix bootloop magisk sulist
-- Tối ưu hoá module
-- Cập nhật lại toàn bộ gói overlay
-- Flash magisk / twrp
-- Auto update
-- Flash online & offline
+- Cập nhật gói việt hoá mới nhất
+- Fix lỗi vặt
+- Tối ưu hoá một vài tính năng 
