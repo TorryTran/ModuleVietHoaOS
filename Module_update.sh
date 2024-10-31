@@ -10,9 +10,7 @@ cd /data/adb/modules/VietHoaHyperOS/module/bin/
 if [ -f ${0%/*}/$TRUE ]; then
   rm -rf ${0%/*}/$TRUE
   touch ${0%/*}/$FALSE
-  NOFI
+  NOFI "Module Việt Hoá update" "Module đã được update bản overlay mới nhất, ae flash lại module để nhận bản cập nhật mới nhất nhé, hôm nào ad rãnh sẽ update module ngoại tuyến sau ạ."
 elif [[ ! -e "$TRUE" ]] && [[ ! -e "$FALSE" ]]; then
   touch ${0%/*}/$FALSE
 fi
-
-NOFI "Module Việt Hoá update" "Module đã được update bản overlay mới nhất, ae flash lại module để nhận bản cập nhật mới nhất nhé, hôm nào ad rãnh sẽ update module ngoại tuyến sau ạ."
