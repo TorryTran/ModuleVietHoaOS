@@ -1,3 +1,2 @@
 - Cập nhật gói việt hoá mới nhất
-- Fix lỗi vặt
-- Tối ưu hoá một vài tính năng 
+- Việt hoá thêm ứng dụng Joyose
