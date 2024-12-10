@@ -12,7 +12,7 @@ if [ -f ${0%/*}/$TRUE ]; then
   touch ${0%/*}/$FALSE
   
 #######################################
-NOFI "Module Việt Hoá (24.11.04)" "Đã cập nhật gói việt hoá mới nhất, flash lại module để cập nhật"
+NOFI "Thông báo" "Không có gì để thông báo!"
 #######################################
 
 elif [[ ! -e "$TRUE" ]] && [[ ! -e "$FALSE" ]]; then
