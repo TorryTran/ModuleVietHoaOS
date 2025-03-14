@@ -1,2 +1,2 @@
 - Cập nhật gói việt hoá mới nhất
-- Việt hoá thêm ứng dụng Joyose
+- Support HyperOS 2.x
