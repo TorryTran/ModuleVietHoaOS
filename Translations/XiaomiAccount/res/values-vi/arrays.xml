@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_user_gender_name">
+        <item>Nam</item>
+        <item>Nữ</item>
+    </string-array>
+    <string-array name="education">
+        <item>Trung học</item>
+        <item>Trung cấp</item>
+        <item>Phổ thông trung học</item>
+        <item>Trung cấp</item>
+        <item>Đại học</item>
+        <item>Thạc sĩ</item>
+        <item>Tiến sĩ</item>
+    </string-array>
+    <string-array name="income">
+        <item>&lt;2,000 Tệ</item>
+        <item>2,001~4,000 Tệ</item>
+        <item>4,001~6,000 Tệ</item>
+        <item>6,001~8,000 Tệ</item>
+        <item>8,001~12,000 Tệ</item>
+        <item>12,000 Tệ</item>
+    </string-array>
+    <string-array name="question_no1">
+        <item>Gia đình</item>
+        <item>Tên bà ngoại</item>
+        <item>Tên ông ngoại</item>
+        <item>Tên ông nội</item>
+        <item>Tên bà nội</item>
+        <item>Sinh nhật cha</item>
+        <item>Sinh nhật mẹ</item>
+        <item>Tuổi của cha mẹ bạn cách nhau bao nhiêu (năm và tháng)?</item>
+    </string-array>
+    <string-array name="question_no2">
+        <item>Trường cũ</item>
+        <item>Tên thầy chủ nhiệm hồi trung học của bạn?</item>
+        <item>Tên thầy chủ nhiệm hồi tiểu học của bạn?</item>
+        <item>Mã số sinh viên hồi đại học của bạn</item>
+        <item>Tên người bạn cùng phòng thời đại học là gì?</item>
+        <item>Tên của thầy hướng dẫn ở trường đại học là gì?</item>
+    </string-array>
+    <string-array name="question_no3">
+        <item>Thông tin cá nhân</item>
+        <item>Cha mẹ gọi bạn biệt danh là gì?</item>
+        <item>6 số cuối của hộ chiếu</item>
+        <item>Bạn sinh ở bệnh viện nào?</item>
+        <item>Tên người bạn tốt nhất của bạn là gì?</item>
+    </string-array>
+    <string-array name="question_no4">
+        <item>Lần đầu</item>
+        <item>Tên của thú cưng đầu tiên của bạn là gì?</item>
+        <item>Tên của bạn gái/bạn trai đầu tiên của bạn là gì?</item>
+        <item>Tên công ty bạn làm việc đầu tiên là gì?</item>
+    </string-array>
+    <string-array name="question_no5">
+        <item>Tình trạng hôn nhân</item>
+        <item>Bạn kết hôn khi nào?</item>
+        <item>Tên vợ/chồng của bạn</item>
+        <item>Sinh nhật vợ/chồng của bạn</item>
+    </string-array>
+    <string-array name="settings_search_security_phone_number">
+        <item>Số điện thoại khôi phục</item>
+        <item>Thêm số điện thoại khôi phục</item>
+        <item>Bảo mật;Tài khoản;Tài khoản Mi;Điện thoại;Xiaomi;Số điện thoại;Thêm;Ghép nối</item>
+    </string-array>
+    <string-array name="settings_search_change_password">
+        <item>Đổi mật khẩu</item>
+        <item>Đổi mật khẩu Tài khoản Mi</item>
+        <item>Thay đổi;Mật khẩu;Xiaomi;Tài khoản Mi;Tài khoản</item>
+    </string-array>
+    <string-array name="settings_search_manage_device">
+        <item>Thiết bị</item>
+        <item>Quản lý thiết bị liên kết với Tài khoản Mi của bạn</item>
+        <item>Thiết bị;Quản lý;Đăng nhập;Đăng nhập;Danh sách thiết bị;Xiaomi;Tài khoản Mi;Tài khoản</item>
+    </string-array>
+    <string-array name="settings_search_login_and_security">
+        <item>Đăng nhập và bảo mật</item>
+        <item>Quản lý số điện thoại và khôi phục, mật khẩu</item>
+        <item>Tài khoản;Bảo mật;Đăng nhập;Đăng nhập;Xiaomi;Tài khoản Mi;Số điện thoại;Email;Thay đổi;Mật khẩu;Thêm;Ghép nối</item>
+    </string-array>
+    <string-array name="settings_search_user_protocol">
+        <item>Thỏa thuận Người dùng</item>
+        <item>Xem Thỏa thuận Người dùng Tài khoản Mi</item>
+        <item>Xiaomi;Tài khoản;Tài khoản Mi;Người dùng;Thỏa thuận;Xem</item>
+    </string-array>
+    <string-array name="settings_search_user_information">
+        <item>Thông tin tài khoản</item>
+        <item>Xem ảnh hồ sơ của bạn và quản lý thông tin tài khoản</item>
+        <item>Tài khoản;Thông tin;Cá nhân;Ảnh hồ sơ;Tên;Xiaomi;ID;Tài khoản Mi;Xem;Cài đặt</item>
+    </string-array>
+    <string-array name="settings_search_security_email_address">
+        <item>Email khôi phục</item>
+        <item>Thêm email khôi phục</item>
+        <item>Security;Email;Xiaomi;Account;Mi Account;Add;Pair</item>
+    </string-array>
+    <string-array name="settings_search_account_and_authority">
+        <item>Tài khoản</item>
+        <item>Thêm và quản lý tài khoản bên thứ ba</item>
+        <item>Ủy quyền;Tài khoản;Tài khoản Mi;Thêm;Ghép nối;Xiaomi;Xem;SNS;WeChat;Google;Weibo</item>
+    </string-array>
+    <string-array name="settings_search_privacy_policy">
+        <item>Chính sách Riêng tư</item>
+        <item>Xem Chính sách Riêng tư Tài khoản Mi</item>
+        <item>Xiaomi;Tài khoản;Tài khoản Mi;Quyền riêng tư;Chính sách;Xem</item>
+    </string-array>
+    <string-array name="settings_search_system_ad">
+        <item>Quảng cáo</item>
+        <item>Quản lý Quảng cáo hệ thống</item>
+        <item>Hệ thống;Quảng cáo;Xiaomi;Tài khoản;Tài khoản Mi;Cài đặt</item>
+    </string-array>
+    <string-array name="settings_search_payment_information">
+        <item>Thông tin thanh toán</item>
+        <item>Xem và quản lý thông tin thanh toán</item>
+        <item>Thanh toán;Thông tin;Xiaomi;Tài khoản Mi;Tài khoản</item>
+    </string-array>
+    <string-array name="settings_search_help_center">
+        <item>Trợ giúp</item>
+        <item>Nhận trợ giúp và hỗ trợ Tài khoản Mi</item>
+        <item>Xiaomi;Tài khoản;Tài khoản Mi;Trợ giúp;Hỗ trợ;Xem</item>
+    </string-array>
+    <string-array name="settings_search_login_2_step_verify">
+        <item>Xác thực 2 bước</item>
+        <item>Đặt xác thực 2 bước cho Tài khoản Mi của bạn</item>
+        <item>Đăng nhập;Đăng nhập;2 bước;xác minh;Xiaomi;Tài khoản;Tài khoản Mi;Cài đặt</item>
+    </string-array>
+    <string-array name="settings_search_account_and_authority_global">
+        <item>Tài khoản</item>
+        <item>Thêm và quản lý tài khoản của bên thứ ba</item>
+        <item>Ủy quyền;Tài khoản;Tài khoản Mi;Thêm;Ghép nối;Xiaomi;Xem;SNS;Facebook;Google</item>
+    </string-array>
+    <string-array name="settings_search_account_and_authority_non_global">
+        <item>Tài khoản</item>
+        <item>Thêm và quản lý tài khoản của bên thứ ba</item>
+        <item>Ủy quyền;Tài khoản;Tài khoản Mi;Thêm;Ghép nối;Xiaomi;Xem;SNS;Facebook;Google</item>
+    </string-array>
+</resources>
