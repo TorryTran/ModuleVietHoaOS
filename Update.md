@@ -1,2 +1,3 @@
 - Cập nhật gói việt hoá mới nhất
-- Support HyperOS 2.x
+- Support HyperOS 3.x
+- Tối ưu hoá module 
