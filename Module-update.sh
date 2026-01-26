@@ -10,7 +10,12 @@ FALSE=b
 if [ -f ${0%/*}/$TRUE ]; then
   rm -rf ${0%/*}/$TRUE
   touch ${0%/*}/$FALSE
-  ADS "https://s.shopee.vn/3B1FwLmOTA"
+
+####################################################################
+  # ADS "https://s.shopee.vn/3B1FwLmOTA"
+  NOFI "Module Việt Hoá HyperOS" "Cảm ơn bạn đã sử dụng module việt hoá, nếu có gì cần góp ý để cải thiện module thì đừng ngại nhắn với dev tại group @VietHoaOS_Support nhé"
+####################################################################
+
 
 elif [[ ! -e "$TRUE" ]] && [[ ! -e "$FALSE" ]]; then
      touch ${0%/*}/$FALSE
