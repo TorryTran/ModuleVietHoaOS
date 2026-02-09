@@ -4,8 +4,8 @@
 NOFI() { su -lp 2000 -c "cmd notification post -S bigtext -t '$1' 'Tag' '$2'"; }
 ADS() { su -c am start -a android.intent.action.VIEW -d "$1" > /dev/null 2>&1; }
 
-TRUE=a
-FALSE=b
+TRUE=b
+FALSE=a
 
 if [ -f ${0%/*}/$TRUE ]; then
   rm -rf ${0%/*}/$TRUE
