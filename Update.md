@@ -1,3 +1,5 @@
+- Tối ưu hóa module
+- Cập nhật gói việt hoá các ứng dụng:
 - Settings.apk
 - framework-ext-res.apk
 - Settings.apk
