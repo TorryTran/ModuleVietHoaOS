@@ -1,3 +1,4 @@
-- Cập nhật bản VietHoaOS Build_07.04.2026
-- Đồng bộ đầy đủ module, overlay và script cài đặt
-- Tối ưu tính ổn định cho HyperOS
+- Settings.apk
+- framework-ext-res.apk
+- Settings.apk
+- MiGalleryLockscreen.apk
