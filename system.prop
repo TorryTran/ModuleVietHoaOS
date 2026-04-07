@@ -1,0 +1,3 @@
+# Bật tính năng làm sạch loa || Cảm ơn dev @Kimnam2005 đã hướng dẫn 
+ro.vendor.audio.spk.clean=true
+ro.product.locale=vi-VN

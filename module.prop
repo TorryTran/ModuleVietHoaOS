@@ -1,0 +1,7 @@
+id=VietHoaHyperOS
+name=Việt Hoá HyperOS
+version=Build_07.04.2026
+versionCode=260407
+author=@TorryTran
+description=
+updateJson=https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/Update.json

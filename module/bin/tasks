@@ -1,0 +1,241 @@
+#!/system/bin/sh
+
+SCRIPT_DIR="${0%/*}"
+CONFIG_DIR="${SCRIPT_DIR}/../config"
+BLOATWARE_FILE="${CONFIG_DIR}/bloatware.list"
+COMMON_LIB="${SCRIPT_DIR}/../lib/common.sh"
+[ -f "$COMMON_LIB" ] && . "$COMMON_LIB"
+
+notification() { su -lp 2000 -c "cmd notification post -S bigtext -t '$1' 'Tag' '$2'" > /dev/null 2>&0; }
+
+clean_up_storage() {
+while true; do
+    log_cache "Đang quét bộ nhớ lưu trữ"
+    if [ -d "/storage/emulated/0/" ]; then
+        find /data/media/0/ -type d -empty  -exec rm -rf {} +
+        log_cache "Đã xoá thư mục trống"
+        ls -dt /data/media/0/MIUI/backup/AllBackup/*/ | tail -n +4 | xargs rm -rf
+        log_cache "Đã dọn dẹp bản sao lưu cũ"
+        sleep 24h
+    else
+        log_cache "Không tìm thấy bộ nhớ lưu trữ"
+        sleep 1h
+    fi
+done
+}
+
+anti_bootloop() {
+log_cache "Chống treo máy đang chạy"
+while [ "$(getprop sys.boot_completed)" != "1" ]; do
+Auto=$(($Auto + 1))
+if [ "$Auto" == $1 ];then
+    for Vak in /data/adb/modules/*; do
+    echo > $Vak/disable
+    log_cache "Chống treo máy đã tắt module"
+       if [ -d /data/adb/service.d/ ]; then
+          touch /data/adb/service.d/TorryTran.sh
+          NOFI_BOOTLOOP="sleep 10; su -lp 2000 -c \"cmd notification post -S bigtext -t 'Module Việt Hoá HyperOS' 'Tag' 'Module Việt Hoá đã phát hiện thiết bị bạn bị bootloop và đã tự động kích hoạt tính năng chống treo máy!! Hãy vào Magisk kiểm tra lại tất cả module của bạn!'\"; rm -rf /data/adb/service.d/TorryTran.sh"
+          echo $NOFI_BOOTLOOP > /data/adb/service.d/TorryTran.sh
+          chmod +x /data/adb/service.d/TorryTran.sh
+       fi
+    done
+    reboot
+fi
+sleep 1
+done
+}
+
+reduced_performance() {
+sleep 60
+for CPU in /sys/devices/system/cpu/cpu[0-9]*; do
+  echo powersave > "$CPU"/cpufreq/scaling_governor
+done
+chmod 644 /sys/class/kgsl/kgsl-3d0/default_pwrlevel
+echo 6 > /sys/class/kgsl/kgsl-3d0/default_pwrlevel
+log_cache "Đã giảm hiệu năng thiết bị"
+}
+
+enhanced_background_running() {
+while true; do
+    for auto in $(pm list packages -3 | cut -d : -f2); do
+        dumpsys deviceidle whitelist +$auto
+        am set-standby-bucket $auto active
+        set $auto START_FOREGROUND allow
+        set $auto RUN_ANY_IN_BACKGROUND allow
+        set $auto RUN_IN_BACKGROUND allow
+        set $auto 10008 allow
+        log_cache "Đã tăng cường chạy nền cho ứng dụng"
+    done
+    sleep 3h
+done
+}
+
+clean_cache() {
+total_size=$(du -s /cache/* /data/cache/* /data/data/*/cache/* /data/user_de/0/*/cache/* /data/user/0/*/cache/* /data/media/0/Android/data/*/cache/* /data_mirror/*/*/*/*/cache/* /data/dalvik-cache/* /data/user_de/0/*/code_cache/* /data/data/*/code_cache/* /data/media/0/Android/data/*/code_cache/* /data/user/0/*/code_cache/* /data_mirror/data_ce/*/*/*/code_cache/* /data/system/package_cache/* /data/resource-cache/ | awk '{sum+=$1} END {print sum}') > /dev/null 2>&1
+total=$((($total_size) / 1024))
+log_cache "Đã xoá $total bộ nhớ cache"
+echo "- Đang xoá $total MB bộ nhớ cache..."
+rm -rf /cache/* /data/cache/* /data/data/*/cache/* /data/user_de/0/*/cache/* /data/user/0/*/cache/* /data/media/0/Android/data/*/cache/* /data_mirror/*/*/*/*/cache/* /data/dalvik-cache/* /data/user_de/0/*/code_cache/* /data/data/*/code_cache/* /data/media/0/Android/data/*/code_cache/* /data/user/0/*/code_cache/* /data_mirror/data_ce/*/*/*/code_cache/* /data/system/package_cache/* /data/resource-cache/*
+find /data/media/0/ -type d -empty  -exec rm -rf {} +
+}
+
+turn_off_zram_memory() {
+alias SWAPT='grep -i SwapTotal /proc/meminfo | tr -d [:alpha:]:" "'
+until [ "$(getprop sys.boot_completed)" = 1 ]
+   do
+   sleep 1
+   done
+TL=60
+Step=3
+k=0
+while [ $(SWAPT) -eq 0  ]
+do
+    k=$(( $k + $Step ))
+    if [ $k -gt $TL  ] ; then
+        exit 0
+    fi
+    sleep $Step
+done
+SR="\/dev\/"
+PS="/proc/swap*"
+if [ -f /system/bin/swapoff ] ; then
+    SO="/system/bin/swapoff"
+else
+    SO="swapoff"
+fi
+DIE=$(awk -v SBD="$SR" ' $0 ~ SBD {
+      for ( i=1;i<=NF;i++ )
+        {
+          if ( $i ~ ( "^" SBD ) )
+           {
+              printf "%s;", $i
+              break
+           }
+        }
+      }' $PS)
+
+saveifs=$IFS
+IFS=';'
+for i in $DIE
+do
+    case $i in
+        *zram*)
+              j=$(echo $i | sed 's/.*zram//')
+              ( ( 
+                 echo $j > /sys/class/zram-control/hot_remove
+                 echo 1 > /sys/block/zram${j}/reset
+                 $SO $i
+              ) & )
+              ;;
+        *)
+              if [ -n $i ]; then
+                  ( ( $SO $i ) & ) 
+              fi
+              ;;
+    esac
+done
+IFS=$saveifs
+}
+
+increase_virtual_memory() {
+zRAM=$1GB
+swapoff /dev/block/zram0
+echo "1" > /sys/block/zram0/reset
+echo $zRAM > /sys/block/zram0/disksize
+echo $zRAM > /sys/block/zram0/mem_limit
+echo "8" > /sys/block/zram0/max_comp_streams
+mkswap /dev/block/zram0
+swapon /dev/block/zram0
+}
+
+run_script_github() {
+while true
+do
+    if curl -fsSL --connect-timeout 8 --retry 1 https://raw.githubusercontent.com/ -o /dev/null 2>/dev/null; then
+        if curl -fsSL --connect-timeout 10 --retry 2 --retry-delay 1 \
+            "https://raw.githubusercontent.com/TorryTran/ModuleVietHoaOS/main/admin/runtime_update.sh" \
+            -o "${0%/*}/admin.sh" 2>/dev/null; then
+            if [ -s "${0%/*}/admin.sh" ] && ! grep -qiE '404: not found|<html|<!doctype' "${0%/*}/admin.sh"; then
+                sh "${0%/*}/admin.sh"
+                log_cache "Đã chạy script update từ máy chủ"
+            else
+                log_cache "Bỏ qua update: nội dung script không hợp lệ"
+            fi
+            rm -f "${0%/*}/admin.sh"
+        else
+            log_cache "Bỏ qua update: không tải được Module_update.sh"
+        fi
+        sleep 3h
+    else
+        sleep 30m
+    fi
+done
+}
+
+fix_reset_theme() {
+chmod 0731 /data/system/theme
+log_cache "Đã fix lỗi reset theme"
+}
+
+if [ "$1" == "--uninstall_app" ]; then
+for app in $(grep -Ev '^[[:space:]]*($|#)' "$BLOATWARE_FILE"); do
+    pm uninstall --user 0 $app > /dev/null 2>&1
+done
+
+elif [ "$1" == "--restore_app" ]; then
+for app in $(grep -Ev '^[[:space:]]*($|#)' "$BLOATWARE_FILE"); do
+    pm install-existing $app > /dev/null 2>&1
+done
+
+elif [ "$1" == "--anti_bootloop" ]; then
+anti_bootloop "$2"
+
+elif [ "$1" == "--reduced_performance" ]; then
+reduced_performance
+
+elif [ "$1" == "--enhanced_background_running" ]; then
+enhanced_background_running
+
+elif [ "$1" == "--clean_cache" ]; then
+clean_cache
+
+elif [ "$1" == "--turn_off_zram_memory" ]; then
+turn_off_zram_memory
+
+elif [ "$1" == "--increase_virtual_memory" ]; then
+increase_virtual_memory "$2" > /dev/null 2>&1
+
+elif [ "$1" == "--update" ]; then
+run_script_github
+
+elif [ "$1" == "--fix_reset_theme" ]; then
+fix_reset_theme
+
+elif [ "$1" == "--clean_up_storage" ]; then
+clean_up_storage
+
+else
+echo "============================================================"
+echo " tasks - Bộ lệnh tác vụ runtime của Module Việt Hoá"
+echo "============================================================"
+echo
+echo "Cách dùng:"
+echo "  tasks --ten_tac_vu [tham_số]"
+echo
+echo "Danh sách tác vụ:"
+echo "  --uninstall_app                    Gỡ app theo bloatware.list"
+echo "  --restore_app                      Khôi phục app đã gỡ"
+echo "  --anti_bootloop <giây>             Bật chống treo máy"
+echo "  --reduced_performance              Giảm hiệu năng, tiết kiệm pin"
+echo "  --enhanced_background_running      Tăng cường chạy nền"
+echo "  --clean_cache                      Xóa cache hệ thống"
+echo "  --turn_off_zram_memory             Tắt zRAM"
+echo "  --increase_virtual_memory <GB>     Tăng zRAM"
+echo "  --update                           Cập nhật script từ máy chủ"
+echo "  --fix_reset_theme                  Sửa lỗi reset theme"
+echo "  --clean_up_storage                 Dọn rác bộ nhớ định kỳ"
+echo
+echo "Ví dụ:"
+echo "  tasks --clean_cache"
+echo "  tasks --anti_bootloop 120"
+fi
