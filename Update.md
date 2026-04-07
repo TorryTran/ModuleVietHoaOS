@@ -1,3 +1,3 @@
-- Cập nhật gói việt hoá mới nhất
-- Support HyperOS 3.x
-- Tối ưu hoá module 
+- Cập nhật bản VietHoaOS Build_07.04.2026
+- Đồng bộ đầy đủ module, overlay và script cài đặt
+- Tối ưu tính ổn định cho HyperOS
